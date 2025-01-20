@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>UrbanDwelling</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/adaptive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <ul class="top-header-menu">
+                <li><a href="#" class="link" data-translate="delivery-payment">Доставка и оплата</a></li>
+                <li><a href="#" class="link" data-translate="warranty-return">Гарантия и возврат</a></li>
+                <li><a href="#" class="link" id="lang-toggle" onclick="changeLanguage()">ENG</a></li>
+            </ul>
+        </div>
+    
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <img src="img/Logo1.png" alt="UrbanDwelling">
+            </a>
+    
+            <ul class="navbar_menu">
+                <li><a href="#" class="link" data-translate="catalog">Каталог</a></li>
+                <li><a href="#" class="link" data-translate="about">О компании</a></li>
+                <li><a href="#" class="link" data-translate="contacts">Контакты</a></li>
+            </ul>
+    
+          
+            <button class="menu-toggle" aria-label="Открыть меню" onclick="toggleSidebar()">
+                <span class="menu-icon"></span>
+            </button>
+    
+            
+            <div class="slide-menu" id="sidebar">
+                <ul class="slide-menu-top">
+                    <li><a href="#" data-translate="delivery-payment">Доставка и оплата</a></li>
+                    <li><a href="#" data-translate="warranty-return">Гарантия и возврат</a></li>
+                    <li><a href="#" id="lang-toggle" onclick="changeLanguage()">ENG</a></li>
+                </ul>
+    
+                <ul class="slide-menu-links">
+                    <li><a href="#" data-translate="catalog">Каталог</a></li>
+                    <li><a href="#" data-translate="about">О компании</a></li>
+                    <li><a href="#" data-translate="contacts">Контакты</a></li>
+                </ul>
+            </div>
+    
+            <div class="search-and-cart-container">
+                <input type="text" class="searchbar" placeholder="Лампы" data-translate="search-placeholder">
+                <a href="#" class="search-link">
+                    <img src="img/search-normal.png" alt="search" class="search-icon">
+                </a>
+            </div>
+            <button class="cart-button">
+                <img src="img/Bag.png" class="cart-icon">
+                <span class="cart-text" data-translate="cart-text">Корзина</span>
+            </button>
+        </nav>
+    </header>
+
+    <h1 data-translate="search-results">Результаты поиска</h1>
+
+    <main>
+        <div class="card">
+            <div class="label" data-translate="sale">Акция</div>
+            <img src="img/img(1).png" alt="Светильник Markt">
+            <button class="more-info" data-translate="more-info">Подробнее</button>
+            <div class="card-info">
+                <span class="product-name" data-translate="product-name-1">Встраиваемый светильник Markt</span>
+                <div class="price">
+                    <span class="new-price">3 490 ₽</span>
+                    <span class="old-price">5 060 ₽</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/img.png" alt="Светильник">
+            <div class="card-info">
+                <div class="product-name" data-translate="product-name-2">Линейный светильник ARG</div>
+                <div class="price">
+                    <span class="price">6 700 ₽</span>
+                </div>
+            </div>
+            <button class="more-info" data-translate="more-info">Подробнее</button>
+        </div>
+
+        <div class="card">
+            <div class="label" data-translate="sale">Акция</div>
+            <img src="img/img(2).png" alt="Светильник">
+            <div class="card-info">
+                <div class="product-name" data-translate="product-name-3">Современный светильник</div>
+                <div class="price">
+                    <span class="new-price">5 600 ₽</span>
+                    <span class="old-price">6 060 ₽</span>
+                </div>
+            </div>
+            <button class="more-info" data-translate="more-info">Подробнее</button>
+        </div>
+
+        <div class="card">
+            <img src="img/img(1).png" alt="Светильник">
+            <div class="card-info">
+                <div class="product-name" data-translate="product-name-4">Встраиваемый светильник Markt</div>
+                <div class="price">
+                    <span class="price">3 490 ₽</span>
+                </div>
+            </div>
+            <button class="more-info" data-translate="more-info">Подробнее</button>
+        </div>
+
+        <div class="card">
+            <div class="label" data-translate="sale">Акция</div>
+            <img src="img/img.png" alt="Светильник">
+            <div class="card-info">
+                <div class="product-name" data-translate="product-name-5">Линейный светильник ARG</div>
+                <div class="price">
+                    <span class="new-price">6 700 ₽</span>
+                    <span class="old-price">6 060 ₽</span>
+                </div>
+            </div>
+            <button class="more-info" data-translate="more-info">Подробнее</button>
+        </div>
+
+        <div class="card">
+            <img src="img/img(2).png" alt="Светильник">
+            <div class="card-info">
+                <div class="product-name" data-translate="product-name-6">Сведодиодный светильник</div>
+                <div class="price">
+                    <span class="price">6 700 ₽</span>
+                </div>
+            </div>
+            <button class="more-info" data-translate="more-info">Подробнее</button>
+        </div>
+
+        <div class="card">
+            <div class="label" data-translate="sale">Акция</div>
+            <img src="img/img(1).png" alt="Светильник">
+            <div class="card-info">
+                <div class="product-name" data-translate="product-name-1">Встраиваемый светильник Markt</div>
+                <div class="price">
+                    <span class="new-price">3 490 ₽</span>
+                    <span class="old-price">6 060 ₽</span>
+                </div>
+            </div>
+            <button class="more-info" data-translate="more-info">Подробнее</button>
+        </div>
+        
+        <div class="card">
+            <img src="img/img.png" alt="Светильник">
+            <div class="card-info">
+                <div class="product-name" data-translate="product-name-2">Линейный светильник ARG</div>
+                <div class="price">
+                    <span class="price">6 700 ₽</span>
+                </div>
+            </div>
+            <button class="more-info" data-translate="more-info">Подробнее</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Urban Dwelling Logo">
+                <p>
+                    <span data-translate="protected">Этот сайт защищен от спама службой reCAPTCHA Google.</span> 
+                    <a href="#" data-translate="privacy-policy">Политика конфиденциальности</a> / 
+                    <a href="#" data-translate="terms-of-service">Условия предоставления услуг</a>
+                </p>
+            </div>
+            <div class="footer-column">
+                <h4 data-translate="address">Адрес</h4>
+                <p>Текст, Текст, Текст</p>
+                <h4 data-translate="contacts">Контакты</h4>
+                <p>Email: <a href="mailto:urban.dwelling@yandex.com" style="text-decoration: none; color: white;" onmouseover="this.style.color='#E45302'" onmouseout="this.style.color='white'">urban.dwelling@yandex.com</a></p>
+                <p>Телефон: 8 (999) 999-99-99</p>
+            </div>
+            <div class="footer-column">
+                <h4 data-translate="services">Услуги</h4>
+                <ul class="footer-links">
+                    <li class="footer-item"><a href="#" data-translate="catalog">Каталог</a></li>
+                    <li class="footer-item"><a href="#" data-translate="about">О компании</a></li>
+                    <li class="footer-item"><a href="#" data-translate="contacts">Контакты</a></li>
+                    <li class="footer-item"><a href="#" data-translate="delivery-payment">Доставка и оплата</a></li>
+                    <li class="footer-item"><a href="#" data-translate="warranty-return">Гарантия и возврат</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li><a href="#" data-translate="public-offer">Публичная оферта</a></li>
+                    <li><a href="#" data-translate="personal-data-policy">Политика персональных данных</a></li>
+                </ul>
+                <div class="footer-payment">
+                    <img src="img\desktopfooter.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
